@@ -1,0 +1,154 @@
+📄 PROYECTO WEB – BUSCADOR DE PELÍCULAS Y STREAMING
+1️⃣ Idea del proyecto
+
+Crear una página web que permita:
+
+Buscar películas
+
+Ver información (título, sinopsis, fecha, póster)
+
+Saber en qué plataformas de streaming está disponible
+
+2️⃣ APIs que voy a usar
+API 1 – The Movie Database (TMDB) ✅ (con autenticación)
+
+Uso: buscar películas y obtener su información
+
+Tipo de autenticación: API Key
+
+Web:
+https://developer.themoviedb.org/docs
+
+API 2 – Watchmode API
+
+Uso: saber en qué plataformas se puede ver una película
+
+Autenticación: API Key
+
+Web:
+https://api.watchmode.com/
+
+👉 La información de TMDB (título o ID) se usa para buscar la disponibilidad en Watchmode.
+
+3️⃣ Estructura de archivos (OBLIGATORIA)
+Proyecto_Apellidos_Nombre
+│
+├── index.html           → Página de introducción
+├── movies.html          → Página de contenidos
+│
+├── css/
+│   └── styles.css
+│
+├── js/
+│   └── app.js
+│
+├── img/
+│   └── galeria/
+│
+└── README.md
+
+4️⃣ Páginas HTML
+📌 index.html
+
+Presentación del proyecto
+
+Explicación de qué hace la web
+
+Botón o enlace a movies.html
+
+📌 movies.html (página principal)
+
+Debe contener:
+
+Cabecera (título de la web)
+
+Menú (Inicio | Películas | Galería | Contacto)
+
+Buscador de películas
+
+Artículos con la información de cada película
+
+Galería de pósters
+
+Pie de página (autor, curso, año)
+
+5️⃣ Diseño (IMPORTANTE PARA LA NOTA)
+Layout
+
+GRID → estructura principal de la página
+
+FLEX → menú, tarjetas de películas, galería
+
+Estilo
+
+Paleta de colores coherente
+
+Tipografía de Google Fonts
+
+Imágenes bien alineadas
+
+Diseño limpio y legible
+
+6️⃣ Funcionamiento con JavaScript
+Pasos:
+
+El usuario escribe una película en el buscador
+
+Se hace un fetch a la API de TMDB
+
+Se muestran:
+
+Título
+
+Sinopsis
+
+Fecha
+
+Póster
+
+Con el título o ID:
+
+Se hace otro fetch a Watchmode
+
+Se muestran las plataformas de streaming
+
+7️⃣ Git y GitHub (OBLIGATORIO)
+
+Crear un repositorio en GitHub
+
+Subir el proyecto desde el inicio
+
+Hacer commits frecuentes, por ejemplo:
+
+Inicio del proyecto
+
+Estructura HTML
+
+Diseño con GRID
+
+Consumo API TMDB
+
+Integración Watchmode
+
+El repositorio debe mostrar todo el proceso
+
+8️⃣ Entrega final
+Entregar:
+
+📦 Archivo ZIP con el proyecto completo
+
+📄 Documento o README con:
+
+Enlaces a las APIs usadas
+
+Enlace al repositorio de GitHub
+
+9️⃣ Objetivo
+
+Cumplir todos los requisitos del enunciado:
+✔ 2 HTML
+✔ 2 APIs
+✔ 1 API con autenticación
+✔ GRID y FLEX
+✔ Diseño cuidado
+✔ Uso de GitHub
