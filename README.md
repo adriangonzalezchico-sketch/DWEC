@@ -1,51 +1,73 @@
-🎬 Proyecto Web: Buscador de Películas y Streaming
-📌 Descripción
+<div align="center">
 
-Aplicación web que permite buscar películas y obtener información detallada (título, sinopsis, fecha y póster), así como conocer en qué plataformas de streaming están disponibles.
+# 🎬 Buscador de Películas y Streaming
 
-🔗 APIs utilizadas
+Aplicación web para buscar películas y conocer  
+**dónde verlas en plataformas de streaming**
 
-The Movie Database (TMDB) (API con autenticación)
-https://developer.themoviedb.org/docs
+<br>
 
-Watchmode API
-https://api.watchmode.com/
+![HTML5](https://img.shields.io/badge/HTML5-orange)
+![CSS3](https://img.shields.io/badge/CSS3-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow)
+![GitHub](https://img.shields.io/badge/GitHub-black)
 
-La información obtenida de TMDB se utiliza para consultar la disponibilidad de la película en las distintas plataformas de streaming mediante Watchmode.
+</div>
 
-🗂️ Estructura del proyecto
+---
 
-index.html → Página de introducción
+## 📌 Descripción
+Este proyecto consiste en una aplicación web que permite buscar películas y mostrar información detallada como **título, sinopsis, fecha de estreno y póster**, además de indicar **en qué plataformas de streaming está disponible** cada película.
 
-movies.html → Página principal de contenidos
+La información se obtiene combinando datos de **dos APIs externas**.
 
-css/ → Estilos (GRID y FLEX)
+---
 
-js/ → Lógica JavaScript y consumo de APIs
+## 🔗 APIs utilizadas
+- 🎥 **The Movie Database (TMDB)** *(API con autenticación mediante API Key)*  
+  https://developer.themoviedb.org/docs  
 
-img/ → Imágenes y galería
+- 📺 **Watchmode API**  
+  https://api.watchmode.com/
 
-🧱 Tecnologías usadas
+> Los datos obtenidos de TMDB se utilizan para consultar la disponibilidad de cada película en plataformas de streaming mediante Watchmode.
 
-HTML5
+---
 
-CSS3 (Grid y Flexbox)
 
-JavaScript (Fetch API)
+## 🛠️ Tecnologías utilizadas
+- **HTML5**
+- **CSS3**
+  - CSS Grid (layout)
+  - Flexbox (componentes)
+- **JavaScript**
+  - Fetch API
+- **Git & GitHub**
 
-Git & GitHub
+---
 
-🎨 Diseño
+## 🎨 Diseño y maquetación
+- Layout principal desarrollado con **CSS Grid**
+- Componentes internos con **Flexbox**
+- Uso adecuado del color, tipografías e imágenes
+- Diseño limpio, estructurado y responsive
 
-Layout realizado con CSS Grid
+---
 
-Componentes diseñados con Flexbox
+## 🚀 Funcionalidades
+- 🔍 Búsqueda de películas
+- 📝 Información detallada de cada película
+- 🖼️ Galería de pósters
+- 📺 Consulta de plataformas de streaming disponibles
 
-Uso adecuado del color, tipografías e imágenes
+---
 
-Diseño responsive y estructurado
-
-👨‍💻 Autor
-
-Adrián González Chico
+## 👤 Autor
+**Adrián González Chico**  
 Curso 2025-2026
+
+---
+
+### ⭐ Repositorio
+Si te gusta este proyecto, ¡no olvides dejar una estrella! ⭐
+
