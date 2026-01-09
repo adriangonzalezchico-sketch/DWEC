@@ -34,7 +34,7 @@ const quitarDuplicadosPorNombre = (fuentes) => {
   const unicas = [];
 
   fuentes.forEach((fuente) => {
-    if (!unicas.includes(fuente.name)) {
+    if (fuente.region === "ES" &&!unicas.includes(fuente.name)) {
       unicas.push(fuente.name);
     }
   });
