@@ -4,13 +4,19 @@ const buscador = document.getElementById("buscador");
 const WATCHMODE_API_KEY = "jJrlBTswASneByRvbKhIIURDMb1GdeoG5dxFIxXv";
 
 const buscarIdWatchmodePorTitulo = async (tituloPelicula) => {
+  const respuesta = await fetch(
+    `https://api.watchmode.com/v1/search/?apiKey=${WATCHMODE_API_KEY}&search_field=name&search_value=${encodeURIComponent(tituloPelicula)}`
+  );
 
-  const respuesta = await fetch(`https://api.watchmode.com/v1/search/?apiKey=${WATCHMODE_API_KEY}&search_field=name&search_value=${encodeURIComponent(tituloPelicula)}`);
+  if (!respuesta.ok) return null;
 
   const datos = await respuesta.json();
 
+  if (datos.title_results.length === 0) return null;
+
   return datos.title_results[0].id;
 };
+
 
 const obtenerFuentesPorId = async (idWatchmode) => {
 
@@ -53,9 +59,9 @@ const usarBuscador = async () => {
 };
 
 
-buscador.addEventListener("submit", (evento) => {
-  evento.preventDefault();
-  usarBuscador();
-});
+// buscador.addEventListener("submit", (evento) => {
+//   evento.preventDefault();
+//   usarBuscador();
+// });
 
 
