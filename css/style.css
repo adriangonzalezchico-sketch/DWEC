@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  background: linear-gradient(180deg, #0b1020, #101a33);
+  color: #eef2ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.portada {
+  display: grid;
+  place-items: center;
+  padding: 40px 20px;
+  height: 1100px;
+}
+
+.portada__contenido {
+  max-width: 700px;
+  padding: 40px 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  top: -140px;
+}
+
+.portada__titulo {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.portada__descripcion {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #c7d2fe;
+}
+
+.portada__boton {
+  margin: 10px 150px 0;
+  padding: 12px 20px;
+  border-radius: 30px;
+  background: #6d5efc;
+  color: #0b1020;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(109, 94, 252, 0.4);
+  transition: all 0.6s ease;
+}
+
+.portada__boton:hover {
+  background: #35c6ff;
+}
+
+.pie-pagina {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 16px;
+}
+
+.pie-pagina__texto {
+  text-align: center;
+  font-size: 0.95rem;
+}
