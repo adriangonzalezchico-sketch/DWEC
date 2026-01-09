@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>PeliRadar | Buscar películas</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/app.css">
 </head>
 <body>
-    <h1>hola</h1>
+    
+
+    <main class="buscador">
+        <section class="buscador__contenedor">
+            <h1 class="buscador__titulo">Buscar película 🎬</h1>
+
+            <form id="buscador" class="buscador__formulario">
+                <input
+                    id="input-buscador"
+                    type="text"
+                    class="buscador__input"
+                    placeholder="Escribe el nombre de la película"
+                    required
+                >
+
+                <button type="submit" class="buscador__boton">
+                    Buscar
+                </button>
+            </form>
+        </section>
+    </main>
+
+
+    <script src="../js/apis.js"></script>
 </body>
 </html>
